@@ -35,7 +35,6 @@ jobs:
     # Run the ebuild keyword action
     - uses: hacking-gentoo/action-ebuild-maintain@next
       with:
-        auth_token: ${{ secrets.PR_TOKEN }}
         deploy_key: ${{ secrets.DEPLOY_KEY }}
         overlay_repo: MADhacking/overlay
         overlay_branch: master
